@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100w;
+  height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+
+/* .right-seperator::after {
+  content: "";
+  background-color: gray;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  height: 100%;
+  width: 1px;
+} */
+
+.navbar {
+  height: 4rem;
+}
+
+.hero {
+  height: calc(100vh - 4rem);
+}
+
+.carousel {
+  height: 46%;
+}
+
+/* .card-container {
+  height: 46%;
+} */
+
+.posts {
+  background-color: gray;
+}
