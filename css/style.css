@@ -24,21 +24,18 @@ ul {
   width: 1px;
 } */
 
-.navbar {
-  height: 4rem;
-}
 
 .hero {
-  height: calc(100vh - 4rem);
+  height: calc(100vh - 5rem);
 }
 
 .carousel {
-  height: 46%;
+  height: 50%;
 }
 
-/* .card-container {
-  height: 46%;
-} */
+.card-container {
+  height: 50%;
+}
 
 .posts {
   background-color: gray;
