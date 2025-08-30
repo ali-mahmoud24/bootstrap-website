@@ -5,7 +5,6 @@
 }
 
 body {
-  width: 100w;
   height: 100vh;
 }
 
@@ -13,30 +12,60 @@ ul {
   list-style: none;
 }
 
-/* .right-seperator::after {
-  content: "";
-  background-color: gray;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+.carousel {
+  height: calc(100vh - 55px);
+}
 
-  height: 100%;
-  width: 1px;
+.cards {
+  width: 100vw;
+}
+
+/* .tours,
+.subscription,
+footer {
+  background-color: #f6f6f6;
+}
+.tours,
+.subscription,
+footer {
+  background-color: #f6f6f6;
 } */
 
-
-.hero {
-  height: calc(100vh - 5rem);
+html[data-bs-theme='light'] .tours,
+html[data-bs-theme='light'] .subscription,
+html[data-bs-theme='light'] footer {
+  background-color: #f6f6f6 !important;
 }
 
-.carousel {
-  height: 50%;
+html[data-bs-theme='dark'] .tours,
+html[data-bs-theme='dark'] .subscription,
+html[data-bs-theme='dark'] footer {
+  background-color: #212529 !important;
 }
 
-.card-container {
-  height: 50%;
+html[data-bs-theme='dark'] .border-white {
+  border-color: rgba(255, 255, 255, 0.15)
+ !important; /* light gray in dark mode */
 }
 
-.posts {
-  background-color: gray;
+html[data-bs-theme="dark"] .btn-dark {
+  background-color: #f8f9fa !important;
+  color: #212529 !important;
+}
+
+
+.subscription {
+  padding: 3rem 10rem;
+}
+
+.carousel-inner,
+.carousel-item {
+  height: 100vh;
+}
+.carousel-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  padding: 20px;
 }
