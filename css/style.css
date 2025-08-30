@@ -4,6 +4,32 @@
   box-sizing: border-box;
 }
 
+html[data-bs-theme='light'] .tours,
+html[data-bs-theme='light'] .subscription,
+html[data-bs-theme='light'] footer {
+  background-color: #f6f6f6 !important;
+}
+
+html[data-bs-theme='dark'] .tours,
+html[data-bs-theme='dark'] .subscription,
+html[data-bs-theme='dark'] footer {
+  background-color: #212529 !important;
+}
+
+html[data-bs-theme='dark'] .border-white {
+  border-color: rgba(
+    255,
+    255,
+    255,
+    0.15
+  ) !important; /* light gray in dark mode */
+}
+
+html[data-bs-theme='dark'] .btn-dark {
+  background-color: #f8f9fa !important;
+  color: #212529 !important;
+}
+
 body {
   height: 100vh;
 }
@@ -19,40 +45,6 @@ ul {
 .cards {
   width: 100vw;
 }
-
-/* .tours,
-.subscription,
-footer {
-  background-color: #f6f6f6;
-}
-.tours,
-.subscription,
-footer {
-  background-color: #f6f6f6;
-} */
-
-html[data-bs-theme='light'] .tours,
-html[data-bs-theme='light'] .subscription,
-html[data-bs-theme='light'] footer {
-  background-color: #f6f6f6 !important;
-}
-
-html[data-bs-theme='dark'] .tours,
-html[data-bs-theme='dark'] .subscription,
-html[data-bs-theme='dark'] footer {
-  background-color: #212529 !important;
-}
-
-html[data-bs-theme='dark'] .border-white {
-  border-color: rgba(255, 255, 255, 0.15)
- !important; /* light gray in dark mode */
-}
-
-html[data-bs-theme="dark"] .btn-dark {
-  background-color: #f8f9fa !important;
-  color: #212529 !important;
-}
-
 
 .subscription {
   padding: 3rem 10rem;
